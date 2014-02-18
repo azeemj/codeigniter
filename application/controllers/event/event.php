@@ -7,10 +7,20 @@
  */
 
 /**
- * Description of abc
+ * Description of event
  *
  * @author azeem
  */
-class abc {
+class event extends CI_Controller {
     //put your code here
+    
+    function __construct() {
+        parent::__construct();
+        
+        
+    }
+    function index(){
+        $this->load->library("event/event");
+        echo "ddd";
+    }
 }

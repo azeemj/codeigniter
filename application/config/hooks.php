@@ -10,6 +10,17 @@
 |
 */
 
+/**
+ * This is used to do the unit tests 
+ * @author  Azeem <jazeem.lk@gmail.com>
+ */
+$hook['display_override'] = array(
+	'class' => 'DisplayLimitHook',
+	'function' => 'captureOutput',
+	'filename' => 'DisplayHook.php',
+	'filepath' => 'hooks'
+);
+
 
 
 /* End of file hooks.php */
